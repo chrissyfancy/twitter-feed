@@ -5,6 +5,7 @@ const TwitterFeed = props => {
   let tweets = props.data.map( tweet => {
     return(
       <Tweet
+        key={tweet.id_str}
         tweet={tweet}
       />
     );
