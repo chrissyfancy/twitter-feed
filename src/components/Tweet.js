@@ -24,7 +24,7 @@ const Tweet = props => {
   };
 
   return (
-    <div className="tweet">
+    <div onClick={props.handleClick} className={`tweet ${props.className}`}>
       <img src={props.tweet.user.profile_image_url}/>
       <p className="username">{props.tweet.user.name}</p>
       <p className="screenname">@{props.tweet.user.screen_name}</p>
